@@ -1,0 +1,299 @@
+body{
+    font-family: 'Montserrat';
+}
+
+#title{
+    background-color: #CA965C;
+    color: #fff;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+h3{
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+hr{
+    background-color: black;
+    height: 1px;
+}
+p{
+    color: #8f8f8f;
+}
+.container-fluid{
+    padding: 3% 15% 8%;
+}
+/*Navbar */
+
+.navbar{
+    padding: 0 0 4.5rem ;
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+    text-align: left;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+       
+}
+
+
+/*Buttons*/
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+/*Title image*/
+.title-image{
+    width: 90%;
+    position: absolute;
+    left: 20%;
+    
+    
+}
+
+/*Features*/
+#features{
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+
+    
+    
+}
+.feature-box{
+    text-align: center;
+    padding: 2%;
+    
+    
+}
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+
+}
+.icon:hover{
+    color: #ff4c68;
+}
+/*testimonials*/
+#testimonials{
+    text-align: center;
+    
+    background-color: #876445;
+    color: #fff;
+}
+.carousel-item{
+    padding: 4% 8%;
+}
+.testimonial-image{
+    width: 70rem;
+    height: 33rem;
+    
+    margin: 20px;
+
+}
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+#pricing{
+    padding: 100px;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+
+@media (max-width:1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+    }
+    .testimonial-image{
+        width: 36rem;
+        height: 20rem;
+    }
+}
+@media (max-width:768px){
+    .testimonial-image{
+        width: 25rem;
+        height: 15rem;
+    }
+    
+}
+
+
+#cta{
+    background-color: #CA965C;
+    color: #fff;
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.cta-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+
+}
+#footer{
+    padding: 7% 15%;
+    text-align: center;
+
+}
+.social-icon{
+    margin: 20px 10px;
+}
+.card-image{
+    width: 21rem;
+    height: 18rem;
+    
+}
+.payment{
+    width: 50%;
+    
+}
+.pay-text{
+    color: #fff;
+}
+.logo{
+    border-radius: 80%;
+}
+.content-section {
+    margin: 1em;
+    
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
