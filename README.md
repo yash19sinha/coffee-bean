@@ -1,16 +1,17 @@
 
 # Coffee Bean
-This is a Static Coffee Shop Website which is build using tech stacks like html css and javascript and in order to enhance our website we used bootstrap library
+This is a Coffee Shop Website which is build using tech stacks like html css and javascript and in order to enhance our website we used bootstrap library. Contributions are welcomed to enhance the website and adding backend or CRUD operations in any relevant manner would be appreciated
 
 
 
 
 
-## Hacktober Fest 2023
+## Hacktoberfest 2023
 We would love to take contribution from anyone who helps us not improve or enhance our user experience of this website
 
 We are looking forward for your contribution
 
+#begineer-friendly
 This is very beginner friendly project for the people who are contributing for the first time
 
 Give this repo a star ⭐
