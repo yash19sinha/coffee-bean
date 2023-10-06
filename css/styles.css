@@ -127,6 +127,13 @@ p{
 #pricing{
     padding: 100px;
 }
+ #pricing h2{
+    text-align: center;
+    text-shadow: 2px 2px grey;
+ }
+ #pricing p{
+    text-align: center;
+ }
 .pricing-column{
     padding: 3% 2%;
 }
