@@ -31,9 +31,9 @@ Feel free to reach out to us through GitHub issues, discussions, or our [communi
 
 A big shoutout to the fantastic contributors who have helped make this project a success. Your dedication and hard work are greatly appreciated!
 
-- [@contributor1](https://github.com/contributor1)
-- [@contributor2](https://github.com/contributor2)
-- [@contributor3](https://github.com/contributor3)
+<a href="https://github.com/yash19sinha/coffee-bean/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=yash19sinha/coffee-bean" />
+</a>
 
 Would you like to see your name here? Contribute to our project today!
 
