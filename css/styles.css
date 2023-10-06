@@ -164,12 +164,22 @@ p{
 
 }
 #footer{
-    padding: 7% 15%;
-    text-align: center;
-
+    padding: 2rem 4rem;
+}
+#footer a{
+    color: #CA965C;
+}
+.social-media-icons {
+    margin-top: 1rem;
+}
+.social-media-icons a:hover {
+    color: #876445 !important;
 }
 .social-icon{
     margin: 20px 10px;
+}
+.copyright {
+    color: #CA965C;
 }
 .card-image{
     width: 21rem;
