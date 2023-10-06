@@ -52,6 +52,6 @@ If you find a bug, have a suggestion, or want to discuss something related to th
 
 ## Communication
 
-Feel free to reach out to us through GitHub issues, discussions, or our [community forum](link-to-forum) for any questions or ideas. We're excited to collaborate with you!
+Feel free to reach out to us through GitHub issues, discussions, or our [community forum]([link-to-forum](https://github.com/yash19sinha/coffee-bean/discussions/2)) for any questions or ideas. We're excited to collaborate with you!
 
 Thank you for being a part of Coffee-Bean's coffee-fueled journey. ☕ Happy coding!
