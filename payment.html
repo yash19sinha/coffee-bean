@@ -75,13 +75,13 @@
                         
                         </div>
                     </div> <!-- End -->
-                    
+
                     <!-- bank transfer info -->
                     <div id="net-banking" class="tab-pane fade pt-3">
                         <div class="form-group "> <label for="Select Your Bank">
                                 <h6>Select your Bank</h6>
-                                <form action="coffee1.html" method="get" >
-                            </label> <select class="form-control" id="ccmonth">
+                                <form action="index.html" method="get" >
+                            </label> <select class="form-control" required id="ccmonth">
                                 <option value="" selected disabled>--Please select your Bank--</option>
                                 <option>Bank 1</option>
                                 <option>Bank 2</option>
@@ -96,8 +96,20 @@
                             </select> </div>
                         <div class="form-group">
                             
-                        <p> <button type="submit" class="btn btn-primary" onclick ="alert('Payment Done Successfully')"><i class="fas fa-mobile-alt mr-2"></i> Confirm Payment</button> </p>
+                        <p> <button type="submit" class="btn btn-primary" onclick ="netBankCheck()"><i class="fas fa-mobile-alt mr-2"></i> Confirm Payment</button> </p>
                     </form>
+                    <script>
+                        function netBankCheck() {
+                            var selectedBank = document.getElementById("ccmonth").value;
+                            if (selectedBank === "") {
+                                alert("Please select your Bank for Net Banking.");
+                                event.preventDefault(); // Prevent the form from submitting if the bank is not selected
+                            } else {
+                                // You can perform additional checks or actions if needed
+                                alert("Net Banking option selected: " + selectedBank + ". Payment done successfully.");
+                            }
+                        }
+                    </script>
                     </div>
                         <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
                     </div> <!-- End -->
