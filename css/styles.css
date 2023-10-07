@@ -99,20 +99,20 @@ p{
 }
 /*testimonials*/
 #testimonials{
+    display:flex;
+    justify-content: center;
     text-align: center;
     
     background-color: #876445;
     color: #fff;
 }
 .carousel-item{
-    padding: 4% 8%;
+    width: 100%;
 }
 .testimonial-image{
     width: 70rem;
     height: 33rem;
-    
-    margin: 20px;
-
+    margin-top:25px;
 }
 #press{
     background-color: #ef8172;
