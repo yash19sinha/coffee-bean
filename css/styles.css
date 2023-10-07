@@ -76,19 +76,41 @@ p{
 
 /*Features*/
 #features{
-    padding: 7% 15%;
-    background-color: #fff;
-    position: relative;
-
-    
+    padding: 7% 8%;
+    background-color: #fff; 
     
 }
+
 .feature-box{
     text-align: center;
     padding: 2%;
     
     
 }
+
+#feature1{
+    height:200px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px grey;
+
+}
+#feature2{
+    height:200px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px grey;
+
+
+}
+#feature3{
+    height:200px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px grey;
+
+}
+
 .icon{
     color: #ef8172;
     margin-bottom: 1rem;
