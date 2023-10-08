@@ -670,3 +670,17 @@ input {
     padding: 0;
   }
 }
+
+
+/* Sponsors */
+
+
+#sponsors {
+	background-color: #ca965c;
+	padding-bottom: 3%;
+}
+
+.sponsors-logo {
+	margin: 20px 20px 30px;
+	width: 50%;
+}
