@@ -1,7 +1,77 @@
 html{
     scroll-behavior: smooth;
 }
-
+/* Title word animation */
+.title-word{
+    animation: color-animation 4s linear infinite;
+}
+/* Applying colors */
+#title-word1{
+  --color-1: #94582a;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+#title-word2{
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+#title-word3{
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+#title-word4{
+    --color-1: #3D8DAE;
+    --color-2: #94582a;
+    --color-3: #E4A9A8;
+}
+#title-word5{
+    --color-1: #94582a;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+#title-word6{
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+#title-word7{
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+#title-word8{
+    --color-1: #3D8DAE;
+    --color-2: #94582a;
+    --color-3: #E4A9A8;
+}
+/* Applying key framse */
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+/* Applying typing out animation on paragraph */
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: 
+      typing 4s forwards;
+    
+    font-size: 1.6rem;
+    width: 0;
+  }
+  /* Applying the keyframes */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 body{
     font-family: 'Montserrat';
 }
@@ -49,15 +119,16 @@ p{
 }
 
 .nav-item{
+    
     padding: 0 18px;
     text-align: left;
 }
 
 .nav-link{
+   
     font-size: 1.2rem;
     font-family: 'Montserrat';
     font-weight: lighter;
-       
 }
 
 
@@ -65,13 +136,19 @@ p{
 .download-button{
     margin: 5% 3% 5% 0;
 }
+#but:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
+#but1:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
 /*Title image*/
 .title-image{
     width: 90%;
     position: absolute;
-    left: 20%;
-    
-    
+    left: 20%;  
 }
 
 /*Features*/
@@ -127,6 +204,13 @@ p{
 #pricing{
     padding: 100px;
 }
+#pricing h2{
+    text-align: center;
+    text-shadow: 2px 2px grey;
+ }
+ #pricing p{
+    text-align: center;
+ }
 .pricing-column{
     padding: 3% 2%;
 }
@@ -185,6 +269,7 @@ p{
 .copyright {
     color: #CA965C;
 }
+
 .card-image{
     width: 21rem;
     height: 18rem;
