@@ -156,41 +156,100 @@ p{
     padding: 7% 15%;
     background-color: #fff;
     position: relative;
+}
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 300px; /* Set a fixed height for all feature cards */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
 
-    
-    
+.feature-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a more pronounced shadow on hover */
+}
+
+.icon:hover {
+  color: #ff4c68;
+  transform: scale(1.1);
 }
 .feature-box{
     text-align: center;
     padding: 2%;
-    
-    
 }
-.icon{
+.icon {
     color: #ef8172;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
 
-}
-.icon:hover{
-    color: #ff4c68;
-}
 /*testimonials*/
 #testimonials{
     text-align: center;
-    
+    align-items: center;
     background-color: #876445;
     color: #fff;
 }
 .carousel-item{
-    padding: 4% 8%;
+    padding: 4% 4%;
 }
 .testimonial-image{
     width: 70rem;
     height: 33rem;
-    
+    align-items: center;
     margin: 20px;
-
 }
+
+/* Style for the carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #ef8172; /* Background color for the buttons */
+  border: none; /* Remove borders */
+  border-radius: 50%; /* Make them round */
+  opacity: 0.8; /* Set initial opacity */
+  transition: background-color 0.3s, opacity 0.3s; /* Add transitions for hover effect */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #f03c57; /* Change background color on hover */
+  opacity: 1; /* Make them fully opaque on hover */
+}
+
+/* Style for the icon inside the buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Remove default icon background color */
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Adjust the icon size */
+  line-height: 50px; /* Vertically center the icon */
+}
+
+/* Adjust the position of the icons for "Next" and "Previous" */
+.carousel-control-prev-icon {
+  margin-left: -3px; /* Adjust the horizontal position for "Previous" */
+}
+
+.carousel-control-next-icon {
+  margin-right: -3px; /* Adjust the horizontal position for "Next" */
+}
+
+
+
+
+
 #press{
     background-color: #ef8172;
     text-align: center;
