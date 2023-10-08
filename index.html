@@ -21,8 +21,39 @@
   <script src="top.js" async></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-
-<body>
+<script>
+  function randomQuote(){
+    const array = ['"Coffee is a hug in a mug." - Unknown',
+'"Coffee is a language in itself." - Jackie Chan',
+'"Coffee is the best thing to douse the sunrise with." - Terri Guillemets',
+'"I have measured out my life with coffee spoons." - T.S. Eliot',
+'"Life is  too short to drink bad coffee." - Unknown',
+'"Behind every successful person is a substantial amount of coffee." - Unknown',
+'"A morning without coffee is like sleep." - Unknown',
+'"Coffee is always a good idea." - Unknown',
+'"I love the smell of fresh coffee in the morning." - Unknown',
+'"Coffee, the favorite drink of the civilized world." - Thomas Jefferson',
+'"Coffee is the common man is  gold, and like gold, it brings to every person the feeling of luxury and nobility." - Sheik-Abd-al-Kadir',
+'"Coffee is a beverage that puts one to sleep when not drank." - Alphonse Allais',
+'"Coffee is a way of stealing time that should by rights belong to your older self." - Terry Pratchett',
+'"Without my morning coffee, I am  just like a dried-up piece of roast goat." - Johann Sebastian Bach',
+'"I have a love affair with coffee." - Unknown',
+'"I would rather take coffee than compliments just now." - Louisa May Alcott',
+'"Good communication is just as stimulating as black coffee, and just as hard to sleep after." - Anne Morrow Lindbergh',
+'"Coffee is the best thing in life because it brings people together." - Unknown',
+'"Life is too short for bad coffee." - Unknown',
+'"Coffee smells like freshly ground heaven." - Jessi Lane Adams',
+'"I can not imagine a day without coffee. I can not imagine!" - Howard Schultz',
+'"Coffee is a cup of hope in a world full of chaos and Mondays." - Unknown',
+'"As long as there was coffee in the world, how bad could things be?" - Cassandra Clare',
+'"Coffee is the answer to all problems." - Unknown',
+'"Coffee is a liquid hug for your brain." - Unknown',
+];
+    const quote = array[Math.floor(Math.random() * array.length)];
+    document.getElementById("cta-heading").innerHTML = quote;
+  }
+</script>
+<body onload="randomQuote()">
   <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
   <section id="title">    
     <div class="container-fluid">
@@ -329,7 +360,7 @@
 
   <section id="cta">
 
-    <h3 class="cta-heading">"A bad day with coffee is better than a good day without it."</h3>
+    <h3 class="cta-heading" id="cta-heading">"A bad day with coffee is better than a good day without it."</h3>
 
     <br><br><br>
 
