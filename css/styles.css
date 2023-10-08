@@ -1,6 +1,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 /* Title word animation */
 .title-word{
     animation: color-animation 4s linear infinite;
@@ -72,6 +73,7 @@ html{
     from { width: 0 }
     to { width: 120% }
   }
+
 body{
     font-family: 'Montserrat';
 }
@@ -105,7 +107,8 @@ p{
     color: #8f8f8f;
 }
 .container-fluid{
-    padding: 3% 15% 8%;
+    padding: 3% 5% 3%;
+
 }
 /*Navbar */
 
@@ -117,18 +120,22 @@ p{
     font-size: 2.5rem;
     font-weight: bold;
 }
+.navbar-toggler-icon{
+  width: 3em;
+  height: 3em;
+}
+
 
 .nav-item{
-    
     padding: 0 18px;
     text-align: left;
 }
 
 .nav-link{
-   
     font-size: 1.2rem;
     font-family: 'Montserrat';
-    font-weight: lighter;
+    font-weight: lighter;  
+
 }
 
 
@@ -136,6 +143,7 @@ p{
 .download-button{
     margin: 5% 3% 5% 0;
 }
+
 #but:hover{
     transform: scale(1.1);
     transition: transform 1s ease-in-out;
@@ -308,7 +316,6 @@ p{
     font-size: 3rem;
     line-height: 1.5;
     font-weight: bold;
-
 }
 #footer{
     padding: 2rem 4rem;
@@ -332,15 +339,22 @@ p{
 .card-image{
     width: 21rem;
     height: 18rem;
+    
 }
 .payment{
-    width: 50%; 
+    width: 50%;
+    
+
 }
 .pay-text{
     color: #fff;
 }
 .logo{
-    border-radius: 80%;
+    border-radius: 100%;
+    mix-blend-mode: multiply;
+    width: 100px;
+    height: 100px;
+
 }
 .content-section {
     margin: 1em;
@@ -506,7 +520,7 @@ input {
 
 .screen {
   position: relative;
-  background: #ca965c;
+  background: #CA965C;
   border-radius: 15px;
 }
 
@@ -680,24 +694,6 @@ input {
   margin: 0 5px;
 }
 
-/* Css Rule For Payment Button  */
-.payment-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Change the color  */
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-}
-
-/* Increased The padding  */
-#features {
-  padding: 10% 8%;
-  background-color: #fff;
-}
-
 @media screen and (max-width: 520px) {
   .screen-body {
     flex-direction: column;
@@ -730,6 +726,20 @@ input {
   }
 }
 
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(46, 46, 46, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #876445;
+  border-radius: 10px;
+  
+  
 /*Press section*/
 #press {
 background-color: #ca965c;
@@ -739,4 +749,5 @@ padding-bottom: 3%;
 .press-logo {
 margin: 20px 20px 30px;
 width: 15%;
+
 }
