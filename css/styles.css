@@ -303,6 +303,14 @@ p{
     
 }
 
+@media (max-width:991.5px){
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+}
+
+
 
 #cta{
     background-color: #CA965C;
@@ -738,7 +746,7 @@ input {
 ::-webkit-scrollbar-thumb {
   background-color: #876445;
   border-radius: 10px;
-  
+}
   
 /*Press section*/
 #press {
@@ -747,7 +755,7 @@ padding-bottom: 3%;
 }
 
 .press-logo {
-margin: 20px 20px 30px;
-width: 15%;
+  margin: 20px 20px 30px;
+  width: 15%;
 
 }
