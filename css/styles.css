@@ -94,6 +94,7 @@ h2{
     font-size: 3rem;
     line-height: 1.5;
     font-weight: bold;
+    text-shadow: 2px 2px grey;
 }
 h3{
     font-family: 'Montserrat';
@@ -240,7 +241,7 @@ p{
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: transparent; /* Remove default icon background color */
-  color: #fff; /* Icon color */
+  color: #f03c57; /* Icon color */
   font-size: 24px; /* Adjust the icon size */
   line-height: 50px; /* Vertically center the icon */
 }
@@ -258,15 +259,64 @@ p{
 
 
 
-#press{
-    background-color: #ef8172;
+#press {
+    background-color: #fff;
     text-align: center;
     padding-bottom: 2%;
 }
-.press-logo{
-    width: 15%;
-    margin: 20px 20px 50px;
+
+
+#press {
+  background-color: #fff;
+  text-align: center;
+  padding: 2% 0;
 }
+
+.sponsor-card {
+  display: inline-block;
+  margin: 20px;
+  transition: transform 0.3s;
+  border-radius: 20px; /* Adjust the border-radius to round the corners slightly */
+  overflow: hidden; /* Hide overflowing logos */
+}
+
+.sponsor-card:hover {
+  transform: scale(1.1);
+}
+
+.circle {
+  width: 150px; /* Adjust the width and height to create a circle */
+  height: 150px; /* Adjust the width and height to create a circle */
+  background-color: #876445; /* Background color for the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.press-logo {
+  width: 100px; /* Adjust the width of logos as needed */
+  height: 100px; /* Adjust the height of logos as needed */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sponsor-card:hover .overlay {
+  opacity: 1;
+}
+
 
 #pricing{
     padding: 100px;
@@ -364,6 +414,7 @@ p{
     max-width: 900px;
     margin: 0 auto;
     padding: 0 1.5em;
+    text-align: center;
 }
 
 .cart-header {
@@ -512,7 +563,7 @@ input {
   margin-top: 50px;
 }
 
-.container {
+.container1 {
   flex: 0 1 700px;
   margin: auto;
   padding: 10px;
@@ -738,16 +789,4 @@ input {
 ::-webkit-scrollbar-thumb {
   background-color: #876445;
   border-radius: 10px;
-  
-  
-/*Press section*/
-#press {
-background-color: #ca965c;
-padding-bottom: 3%;
-}
-
-.press-logo {
-margin: 20px 20px 30px;
-width: 15%;
-
 }
