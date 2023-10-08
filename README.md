@@ -35,7 +35,7 @@ A big shoutout to the fantastic contributors who have helped make this project a
 ## Thanks to all Contributors <a name = "contributors"></a>
 
 <a href="https://github.com/yash19sinha/coffee-bean/graphs/contributors"> 
-<img src="https://contrib.rocks/image?repo=yash19sinha/coffee-bean" /> 
+<img src="https://contrib.rocks/image?repo=yash19sinha/coffee-bean"/> 
 </a>
 
 Would you like to see your name here? Contribute to our project today!
