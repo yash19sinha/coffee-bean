@@ -356,7 +356,9 @@ p{
     font-weight: bold;
     font-size: 1.25em;
     color: #333;
+   
 }
+
 
 .cart-column {
     display: flex;
@@ -395,6 +397,11 @@ p{
     width: 5rem;
     height: 5rem;
     border-radius: 10px;
+}
+
+/* CARD  */
+.card-header {
+  text-align: center;
 }
 
 .btn-danger {
