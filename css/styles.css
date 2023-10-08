@@ -729,3 +729,14 @@ input {
     padding: 0;
   }
 }
+
+/*Press section*/
+#press {
+background-color: #ca965c;
+padding-bottom: 3%;
+}
+
+.press-logo {
+margin: 20px 20px 30px;
+width: 15%;
+}
