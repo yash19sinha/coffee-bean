@@ -8,6 +8,7 @@ Welcome to the Coffee-Bean Coffee Shop Website project! We're on a journey to bl
 - [Reporting Issues](#reporting-issues)
 - [Communication](#communication)
 - [Contributors](#contributors)
+- [CodeofConduct](#codeofconduct)
 
 ## Contributing
 
@@ -45,3 +46,5 @@ Thank you for being a part of Coffee-Bean's coffee-fueled journey. ☕ Happy cod
 
 🌟 Don't forget to star ⭐ this repository if you find it brew-tiful and fork 🍴 it to make your own cup of coding magic! Let's spread the love for coffee and code together.
 
+## Code of Conduct
+This repository adheres to the guidelines outlined in the [Code of Conduct](CODE_OF_CONDUCT.md).
