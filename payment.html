@@ -43,7 +43,7 @@
                         <!-- credit card info-->
                         
                         <div id="credit-card" class="tab-pane fade show active pt-3">
-                            <form action="index.html" method="get" >
+                            <form action="index.html" method="get" onsubmit="return validateForm();">
                                 <div class="form-group"> <label for="username">
                                         <h6>Card Owner</h6>
                                     </label> <input type="text" name="username" placeholder="Card Owner Name" class="form-control" required> </div>
@@ -69,13 +69,26 @@
                                     </div>
                                 </div>
                                 <div class="card-footer"> 
-                                <button onclick ="alert('Payment Done Successfully')" type="submit" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                                <button type="submit" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
                             </form>
                             
                         
                         </div>
                     </div> <!-- End -->
-
+                    <script>
+                        function validateForm() {
+                            var inputs = document.querySelectorAll('input[required]');
+                            for (var i = 0; i < inputs.length; i++) {
+                                if (!inputs[i].value) {
+                                    alert('Please fill in all the required fields.');
+                                    return false;
+                                }
+                            }
+                            alert('Payment Done Successfully');
+                            window.location.href = 'index.html';
+                            return true;
+                        }
+                    </script>
                     <!-- bank transfer info -->
                     <div id="net-banking" class="tab-pane fade pt-3">
                         <div class="form-group "> <label for="Select Your Bank">
@@ -103,9 +116,8 @@
                             var selectedBank = document.getElementById("ccmonth").value;
                             if (selectedBank === "") {
                                 alert("Please select your Bank for Net Banking.");
-                                event.preventDefault(); // Prevent the form from submitting if the bank is not selected
+                                event.preventDefault(); 
                             } else {
-                                // You can perform additional checks or actions if needed
                                 alert("Net Banking option selected: " + selectedBank + ". Payment done successfully.");
                             }
                         }
