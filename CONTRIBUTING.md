@@ -40,6 +40,7 @@ Welcome to the Coffee-Bean Coffee Shop Website project! We're thrilled that you'
 
 10. **Merge**: Once approved, your Pull Request will be merged into the main branch.
 
+
 ## Code Style Guidelines
 
 - Follow consistent coding style, including indentation and naming conventions.

@@ -8,6 +8,7 @@ Welcome to the Coffee-Bean Coffee Shop Website project! We're on a journey to bl
 - [Reporting Issues](#reporting-issues)
 - [Communication](#communication)
 - [Contributors](#contributors)
+- [CodeofConduct](#codeofconduct)
 
 ## Contributing
 
@@ -31,10 +32,15 @@ Feel free to reach out to us through GitHub issues, discussions, or our [communi
 
 A big shoutout to the fantastic contributors who have helped make this project a success. Your dedication and hard work are greatly appreciated!
 
+## Thanks to all Contributors <a name = "contributors"></a>
+
+
 <a href="https://github.com/yash19sinha/coffee-bean/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yash19sinha/coffee-bean" />
+  <img src="https://contrib.rocks/image?repo=yash19sinha/coffee-bean&max=400&columns=20" />
+  <img src="https://us-central1-tooljet-hub.cloudfunctions.net/github" width="0" height="0" />
 </a>
 
+Made with [contrib.rocks](https://contrib.rocks).
 Would you like to see your name here? Contribute to our project today!
 
 ---
@@ -43,3 +49,5 @@ Thank you for being a part of Coffee-Bean's coffee-fueled journey. ☕ Happy cod
 
 🌟 Don't forget to star ⭐ this repository if you find it brew-tiful and fork 🍴 it to make your own cup of coding magic! Let's spread the love for coffee and code together.
 
+## Code of Conduct
+This repository adheres to the guidelines outlined in the [Code of Conduct](CODE_OF_CONDUCT.md).
