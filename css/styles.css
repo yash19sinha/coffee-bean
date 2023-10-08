@@ -2,6 +2,78 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Title word animation */
+.title-word{
+    animation: color-animation 4s linear infinite;
+}
+/* Applying colors */
+#title-word1{
+  --color-1: #94582a;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+#title-word2{
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+#title-word3{
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+#title-word4{
+    --color-1: #3D8DAE;
+    --color-2: #94582a;
+    --color-3: #E4A9A8;
+}
+#title-word5{
+    --color-1: #94582a;
+    --color-2: #3D8DAE;
+    --color-3: #E4A9A8;
+}
+#title-word6{
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+#title-word7{
+    --color-1: #ACCFCB;
+    --color-2: #E4A9A8;
+    --color-3: #ACCFCB;
+}
+#title-word8{
+    --color-1: #3D8DAE;
+    --color-2: #94582a;
+    --color-3: #E4A9A8;
+}
+/* Applying key framse */
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+/* Applying typing out animation on paragraph */
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: 
+      typing 4s forwards;
+    
+    font-size: 1.6rem;
+    width: 0;
+  }
+  /* Applying the keyframes */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 120% }
+  }
+
 body{
     font-family: 'Montserrat';
 }
@@ -36,6 +108,7 @@ p{
 }
 .container-fluid{
     padding: 3% 5% 3%;
+
 }
 /*Navbar */
 
@@ -61,8 +134,8 @@ p{
 .nav-link{
     font-size: 1.2rem;
     font-family: 'Montserrat';
-    font-weight: lighter;
-       
+    font-weight: lighter;  
+
 }
 
 
@@ -70,76 +143,121 @@ p{
 .download-button{
     margin: 5% 3% 5% 0;
 }
+
+#but:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
+#but1:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
 /*Title image*/
 .title-image{
     width: 90%;
     position: absolute;
-    left: 20%;
-    
-    
+    left: 20%;  
 }
 
 /*Features*/
 #features{
-    padding: 7% 8%;
-    background-color: #fff; 
-    
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+}
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 300px; /* Set a fixed height for all feature cards */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
 }
 
+.feature-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a more pronounced shadow on hover */
+}
+
+.icon:hover {
+  color: #ff4c68;
+  transform: scale(1.1);
+}
 .feature-box{
     text-align: center;
     padding: 2%;
-    
-    
 }
-
-#feature1{
-    height:200px;
-    width: 180px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px grey;
-
-}
-#feature2{
-    height:200px;
-    width: 180px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px grey;
-
-
-}
-#feature3{
-    height:200px;
-    width: 180px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px grey;
-
-}
-
-.icon{
+.icon {
     color: #ef8172;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
 
-}
-.icon:hover{
-    color: #ff4c68;
-}
 /*testimonials*/
 #testimonials{
-    display:flex;
-    justify-content: center;
     text-align: center;
-    
+    align-items: center;
     background-color: #876445;
     color: #fff;
 }
 .carousel-item{
-    width: 100%;
+    padding: 4% 4%;
 }
 .testimonial-image{
+    width: 70rem;
     height: 33rem;
-    margin-top:25px;
+    align-items: center;
+    margin: 20px;
 }
+
+/* Style for the carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #ef8172; /* Background color for the buttons */
+  border: none; /* Remove borders */
+  border-radius: 50%; /* Make them round */
+  opacity: 0.8; /* Set initial opacity */
+  transition: background-color 0.3s, opacity 0.3s; /* Add transitions for hover effect */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #f03c57; /* Change background color on hover */
+  opacity: 1; /* Make them fully opaque on hover */
+}
+
+/* Style for the icon inside the buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Remove default icon background color */
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Adjust the icon size */
+  line-height: 50px; /* Vertically center the icon */
+}
+
+/* Adjust the position of the icons for "Next" and "Previous" */
+.carousel-control-prev-icon {
+  margin-left: -3px; /* Adjust the horizontal position for "Previous" */
+}
+
+.carousel-control-next-icon {
+  margin-right: -3px; /* Adjust the horizontal position for "Next" */
+}
+
+
+
+
+
 #press{
     background-color: #ef8172;
     text-align: center;
@@ -153,7 +271,7 @@ p{
 #pricing{
     padding: 100px;
 }
- #pricing h2{
+#pricing h2{
     text-align: center;
     text-shadow: 2px 2px grey;
  }
@@ -198,7 +316,6 @@ p{
     font-size: 3rem;
     line-height: 1.5;
     font-weight: bold;
-
 }
 #footer{
     padding: 2rem 4rem;
@@ -218,6 +335,7 @@ p{
 .copyright {
     color: #CA965C;
 }
+
 .card-image{
     width: 21rem;
     height: 18rem;
@@ -226,6 +344,7 @@ p{
 .payment{
     width: 50%;
     
+
 }
 .pay-text{
     color: #fff;
@@ -235,6 +354,7 @@ p{
     mix-blend-mode: multiply;
     width: 100px;
     height: 100px;
+
 }
 .content-section {
     margin: 1em;
@@ -368,7 +488,6 @@ p{
 #backToTop:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
-
 
 /* #===========# contact #============# */
 
@@ -619,4 +738,16 @@ input {
 ::-webkit-scrollbar-thumb {
   background-color: #876445;
   border-radius: 10px;
+  
+  
+/*Press section*/
+#press {
+background-color: #ca965c;
+padding-bottom: 3%;
+}
+
+.press-logo {
+margin: 20px 20px 30px;
+width: 15%;
+
 }
