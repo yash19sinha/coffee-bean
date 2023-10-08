@@ -71,7 +71,7 @@ html{
   /* Applying the keyframes */
   @keyframes typing {
     from { width: 0 }
-    to { width: 120% }
+    to { width: 87.5% }/*Bug fixes here by reducing the width to a certain limit*/
   }
 
 body{
@@ -144,14 +144,19 @@ p{
 .download-button{
     margin: 5% 3% 5% 0;
 }
-
+/* Updated this above transform style */
+#but{
+  transition: transform 0.3s ease;
+}
 #but:hover{
     transform: scale(1.1);
-    transition: transform 1s ease-in-out;
+}
+#but1{
+  transition: transform 0.3s ease;
 }
 #but1:hover{
     transform: scale(1.1);
-    transition: transform 1s ease-in-out;
+    
 }
 /*Title image*/
 .title-image{
@@ -259,11 +264,7 @@ p{
 
 
 
-#press {
-    background-color: #fff;
-    text-align: center;
-    padding-bottom: 2%;
-}
+
 
 
 #press {
@@ -391,10 +392,34 @@ p{
     height: 18rem;
     
 }
+/* Applying some box shadow on menu */
+.card{
+  box-shadow: 2px 2px 2px 2px grey;
+  transition: transform 0.3s ease;
+}
+/* Applying hovering effect on the cards */
+.card:hover{
+  transform: scale(1.1);
+}
+/* Typing effect on the paragraph under menu */
+.typed-out1{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  
+  animation: 
+    typing1 4s forwards;
+  margin-left: 350px;
+  font-size: 1.6rem;
+  width: 0;
+}
+/* Applying the keyframes */
+@keyframes typing1 {
+  from { width: 0% }
+  to { width: 40% }
+}
 .payment{
     width: 50%;
-    
-
 }
 .pay-text{
     color: #fff;
