@@ -76,6 +76,7 @@ html{
 
 body{
     font-family: 'Montserrat';
+    overflow-x: hidden;
 }
 
 #title{
@@ -410,8 +411,8 @@ p{
 .logo{
     border-radius: 100%;
     mix-blend-mode: multiply;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 
 }
 .content-section {
@@ -649,6 +650,7 @@ input {
 .screen-body-item {
   flex: 1;
   padding: 50px;
+  align-items: center;
 }
 
 .screen-body-item.left {
@@ -661,10 +663,10 @@ input {
   flex-direction: column;
   position: relative;
   color: #ffffff;
-  font-size: 26px;
+  font-size: 34px;
 }
 
-.app-title:after {
+/* .app-title:after {
   content: "";
   display: block;
   position: absolute;
@@ -673,7 +675,7 @@ input {
   width: 25px;
   height: 4px;
   background: #343a40;
-}
+} */
 
 .app-contact {
   margin-top: auto;
