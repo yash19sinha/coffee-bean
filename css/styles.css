@@ -397,7 +397,7 @@ p{
 .card-image{
     width: 21rem;
     height: 18rem;
-    
+    margin: auto;
 }
 .payment{
     width: 50%;
@@ -751,6 +751,10 @@ input {
   width: 20px;
   height: 20px;
   margin: 0 5px;
+}
+
+.card-body {
+  display: flex;
 }
 
 @media screen and (max-width: 520px) {
