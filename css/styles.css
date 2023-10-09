@@ -353,6 +353,14 @@ p{
     
 }
 
+@media (max-width:991.5px){
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+}
+
+
 
 #cta{
     background-color: #CA965C;
