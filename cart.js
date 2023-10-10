@@ -25,7 +25,7 @@ function ready() {
 
   document
     .getElementsByClassName("btn-purchase")[0]
-    .addEventListener("click", purchaseClicked);
+    ?.addEventListener("click", purchaseClicked);
 }
 
 function purchaseClicked() {
