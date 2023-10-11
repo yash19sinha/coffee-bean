@@ -217,7 +217,22 @@ p{
 }
 
 /* Style for the carousel control buttons */
-.carousel-control-prev,
+.carousel-control-prev
+{
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #ef8172; /* Background color for the buttons */
+  border: none; /* Remove borders */
+  border-radius: 50%; /* Make them round */
+  opacity: 0.8; /* Set initial opacity */
+  transition: background-color 0.3s, opacity 0.3s; /* Add transitions for hover effect */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  margin-left: 50px;
+}
+
 .carousel-control-next {
   width: 50px; /* Adjust the width as needed */
   height: 50px; /* Adjust the height as needed */
@@ -230,6 +245,7 @@ p{
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
+  margin-right: 50px;
 }
 
 .carousel-control-prev:hover,
