@@ -36,7 +36,7 @@ A big shoutout to the fantastic contributors who have helped make this project a
 
 
 <a href="https://github.com/yash19sinha/coffee-bean/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=yash19sinha/coffee-bean&max=400&columns=20" />
+  <img src="https://contrib.rocks/image?repo=yash19sinha/coffee-bean&max=400&columns=10" />
   <img src="https://us-central1-tooljet-hub.cloudfunctions.net/github" width="0" height="0" />
 </a>
 
