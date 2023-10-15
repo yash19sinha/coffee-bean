@@ -70,7 +70,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer"> 
-                                <button onclick ="Swal.fire(
+                                <button onclick ="bugfix(
                                     'Payment Success',
                                     'Thankyou For Choosing Us'
                                     )" type="submit" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
@@ -79,6 +79,18 @@
                         
                         </div>
                     </div> <!-- End -->
+                    <script>
+                        function bugfix(string1,string2){
+                            var inputs = document.querySelectorAll('input[required]');
+                            for (var i = 0; i < inputs.length; i++) {
+                                if (!inputs[i].value) {
+                                    return ;
+                                }
+                            }
+                            Swal.fire(string1,string2)
+                            return ;
+                        }
+                    </script>
                     <script>
                         function validateForm() {
                             var inputs = document.querySelectorAll('input[required]');
