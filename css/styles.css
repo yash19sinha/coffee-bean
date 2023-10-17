@@ -290,6 +290,7 @@ p{
 }
 
 .sponsor-card {
+  position: relative;
   display: inline-block;
   margin: 20px;
   transition: transform 0.3s;
