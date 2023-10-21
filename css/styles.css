@@ -1,3 +1,10 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+  
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -115,13 +122,14 @@ p{
 /*Navbar */
 
 .navbar{
-  padding: 0 0 5rem ;
+  padding: 0 0 0rem ;
   
 }
 .navbar-brand{
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
+  
 }
 .navbar-toggler-icon{
 width: 3em;
@@ -130,7 +138,7 @@ height: 3em;
 
 
 .nav-item{
-  padding: 0 25px;
+  padding: 0 30px;
   text-align: left;
   
   font-size: 20vw;
@@ -151,6 +159,7 @@ color:#7c4b21d1;
 #col:hover{
 color: #3a1b00d1;
 text-decoration: underline;
+transition: 0.7s;
 }
 
 
