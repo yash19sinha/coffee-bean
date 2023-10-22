@@ -82,6 +82,7 @@ body{
 #title{
   background-color: #CA965C;
   color: #fff;
+  height: 100vh;
 }
 h1{
   font-family: 'Montserrat', sans-serif;
@@ -110,28 +111,29 @@ p{
 }
 .container-fluid{
   padding: 3% 5% 3%;
-
 }
+
 /*Navbar */
 .title-image{
   opacity: 0.7;
-  
 }
 
 
 .navbar{
-
-    padding: 0 2rem 5rem 0rem ;
-    
+    padding: 0 2rem 5rem 0rem ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
+
 .navbar-brand{
     font-family: 'Ubuntu', sans-serif;
     font-size: 3.5rem;
     font-weight: bold;
     font-size: 20px;
-    padding: 0 0 5rem ;
-  
+    padding: 0;
 }
+
 .navbar-brand{
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5rem;
