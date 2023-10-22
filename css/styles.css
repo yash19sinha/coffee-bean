@@ -113,20 +113,36 @@ p{
 
 }
 /*Navbar */
+.title-image{
+  opacity: 0.7;
+  
+}
+
 
 .navbar{
-  padding: 0 0 5rem ;
+
+    padding: 0 2rem 5rem 0rem ;
+    
+}
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 0 5rem ;
   
 }
 .navbar-brand{
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
+
 }
 .navbar-toggler-icon{
 width: 3em;
 height: 3em;
 }
+
 
 
 .nav-item{
@@ -136,11 +152,29 @@ height: 3em;
   font-size: 20vw;
   font-weight: 800;
 }
-
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255,255,255);
+  cursor: pointer;
+}
 .nav-link{
+
+    font-size:1.5rem;
+    font-family: 'Montserrat';
+    font-weight: lighter;  
+    
+}
+.nav-link:hover{
+  scale: 1.2;
+  background-color: rgb(237, 112, 40);
+  border-radius: 10px;
+  color: white;
+  transition-duration: 0.4s;
+  
+
   font-size: 1.5rem;
   font-family: 'Montserrat';
   font-weight: lighter;  
+
 
 }
 
@@ -152,6 +186,7 @@ color:#7c4b21d1;
 color: #3a1b00d1;
 text-decoration: underline;
 }
+
 
 
 /*Buttons*/
@@ -303,12 +338,14 @@ padding: 2% 0;
 }
 
 .sponsor-card {
-position: relative;
-display: inline-block;
-margin: 20px;
-transition: transform 0.3s;
-border-radius: 20px; /* Adjust the border-radius to round the corners slightly */
-overflow: hidden; /* Hide overflowing logos */
+
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  transition: transform 0.3s;
+  border-radius: 20px; /* Adjust the border-radius to round the corners slightly */
+  overflow: hidden; /* Hide overflowing logos */
+
 }
 
 .sponsor-card:hover {
@@ -439,10 +476,17 @@ opacity: 1;
   color: #fff;
 }
 .logo{
+
+    border-radius: 100%;
+    mix-blend-mode: multiply;
+    width: 80px;
+    height: 80px;
+
   border-radius: 100%;
   mix-blend-mode: multiply;
   width: 150px;
   height: 150px;
+
 
 }
 .content-section {
@@ -761,7 +805,11 @@ outline: none;
 }
 
 .app-form-button:hover {
-color: #eb5757;
+
+  color: #eb5757;
+  transition-duration: 0.4s;
+  scale: 1.01;
+  color: #eb5757;
 }
 
 .credits {
