@@ -1,0 +1,135 @@
+.container{
+    top: 23px;
+}
+.navbar{
+    padding: 0;
+}
+.navbar::before{
+    content: " ";
+    position: absolute;
+    background-color:#CA965C ;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+/* body{
+    background-color: #CA965C;
+} */
+
+#subHead1 {
+    color: black;
+    text-shadow: 2px 2px 4px #888585;
+    font-size: 30px;
+  }
+  .text-center {
+    color: #f7000c;
+    text-align: center!important;
+  }
+  #sign::before{
+    content: " ";
+    position: absolute;
+    /* background-image: linear-gradient(to right, #b40c57, #bf3370); */
+    left: 0px;
+    /* top: 0px; */
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+  }
+  #sign{
+    height: 100vh;
+  }
+  .form-container {
+    max-width: 55vw; /* Adjust the maximum width to your preference */
+    margin: 0 auto; /* Center the container horizontally */
+    /* height: 45vh; */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    
+    
+  }
+
+  .form-container p{
+   text-align: center;
+    margin-top: 22px;
+  }
+  .form-container p a{
+    color: black;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 1170px){
+    .form-container {
+        max-width: 75vw;
+    }
+  
+  }
+  @media screen and (max-width: 450px){
+    .navbar-brand img {
+        width: 14vw;
+        height: 14vw;
+       }
+       .navbar-brand{
+        font-size: 1.5rem;
+       }
+       
+  }
+  
+  @media screen and (max-width: 791px){
+    .form-container {
+        max-width: 90vw;
+    }
+    .form-group{
+        display: flex;
+        flex-direction: column;
+       }
+    #footer div{
+        /* margin-left: 8vw;
+        margin-right: 8vw; */
+       display: flex;
+       flex-direction: column;
+      }
+      .logo {
+        width: 16vw;
+        height: 16vw;
+       }
+  }
+
+  /* footer styling */
+  .logo {
+    border-radius: 100%;
+    mix-blend-mode: multiply;
+    width: 9vw;
+    height: 9vw;
+  }
+  #footer{
+    padding: 2rem 4rem;
+  }
+  #footer div{
+    /* margin-left: 8vw;
+    margin-right: 8vw; */
+    /* display: flex;
+    justify-content: space-between; */
+    max-width: 80vw; /* Adjust the maximum width to your preference */
+    margin: auto;
+  }
+  #footer a{
+    color: #CA965C;
+  }
+  .social-media-icons {
+    margin-top: 3rem;
+    display: flex;
+  }
+  .social-media-icons a:hover {
+    color: #876445 !important;
+  }
+  .social-icon{
+    margin: 20px 10px;
+  }
+  .copyright {
+    color: #CA965C;
+  }
+  
