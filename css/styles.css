@@ -180,7 +180,7 @@ height: 3em;
   cursor: pointer;
 }
 .nav-link{
-
+    transition: .3s ease;
     font-size:1.5rem;
     font-family: 'Montserrat';
     font-weight: lighter;  
@@ -191,14 +191,6 @@ height: 3em;
   background-color: #7c4b21d1;
   border-radius: 10px;
   color: white;
-  transition-duration: 0.4s;
-  
-
-  font-size: 1.5rem;
-  font-family: 'Montserrat';
-  font-weight: lighter;  
-
-
 }
 
 #col{
@@ -217,14 +209,14 @@ text-decoration: underline;
   margin: 5% 3% 5% 0;
 }
 
-#but:hover{
-  transform: scale(1.1);
-  transition: transform 1s ease-in-out;
+#but, #but1 {
+  transition: .2s ease-out;
 }
-#but1:hover{
+
+:is(#but, #but1):hover {
   transform: scale(1.1);
-  transition: transform 1s ease-in-out;
 }
+
 /*Title image*/
 .title-image{
   width: 90%;
