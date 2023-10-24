@@ -269,6 +269,11 @@ transform: scale(1.1);
   background-color: #876445;
   color: #fff;
 }
+
+#testimonials h2{
+  margin-bottom: -50px !important;
+  padding-top: 22px;
+}
 .carousel-item{
   padding: 4% 4%;
 }
