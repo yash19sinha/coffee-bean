@@ -560,11 +560,11 @@ p {
 
 #footer {
   padding: 2rem 4rem;
-  background-color: #0000002c;
+  background-color: #CA965C;
 }
 
 #footer a {
-  color: #CA965C;
+  color: #FFF;
 }
 
 .social-media-icons {
@@ -572,8 +572,9 @@ p {
 }
 
 .social-media-icons a:hover {
-  color: #876445 !important;
+  color: #FFF !important;
   text-decoration: none;
+  opacity: 0.7;
 }
 
 .social-icon {
@@ -581,7 +582,7 @@ p {
 }
 
 .copyright {
-  color: #CA965C;
+  color: #FFF;
 }
 
 .card-image {
@@ -604,8 +605,8 @@ p {
 
   border-radius: 100%;
   mix-blend-mode: multiply;
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
 }
 
 .content-section {
