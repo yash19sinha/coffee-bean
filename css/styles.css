@@ -558,31 +558,24 @@ p {
   font-weight: bold;
 }
 
-#footer {
+#footer{
   padding: 2rem 4rem;
-  background-color: #CA965C;
 }
-
-#footer a {
-  color: #FFF;
+#footer a{
+  color: #CA965C;
 }
-
 .social-media-icons {
-  margin: 0;
+  margin-top: 3rem;
 }
-
 .social-media-icons a:hover {
-  color: #FFF !important;
-  text-decoration: none;
-  opacity: 0.7;
+  color: #876445 !important;
 }
-
-.social-icon {
+.social-icon{
   margin: 20px 10px;
 }
-
 .copyright {
-  color: #FFF;
+  color: #CA965C;
+
 }
 
 .card-image {
