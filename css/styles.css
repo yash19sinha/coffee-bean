@@ -10,92 +10,90 @@ html {
 /* Applying colors */
 #title-word1 {
   --color-1: #94582a;
-  --color-2: #3D8DAE;
-  --color-3: #E4A9A8;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8;
 }
 
 #title-word2 {
-  --color-1: #DBAD4A;
-  --color-2: #ACCFCB;
-  --color-3: #17494D;
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
 }
 
 #title-word3 {
-  --color-1: #ACCFCB;
-  --color-2: #E4A9A8;
-  --color-3: #ACCFCB;
+  --color-1: #accfcb;
+  --color-2: #e4a9a8;
+  --color-3: #accfcb;
 }
 
 #title-word4 {
-  --color-1: #3D8DAE;
+  --color-1: #3d8dae;
   --color-2: #94582a;
-  --color-3: #E4A9A8;
+  --color-3: #e4a9a8;
 }
 
 #title-word5 {
   --color-1: #94582a;
-  --color-2: #3D8DAE;
-  --color-3: #E4A9A8;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8;
 }
 
 #title-word6 {
-  --color-1: #DBAD4A;
-  --color-2: #ACCFCB;
-  --color-3: #17494D;
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
 }
 
 #title-word7 {
-  --color-1: #ACCFCB;
-  --color-2: #E4A9A8;
-  --color-3: #ACCFCB;
+  --color-1: #accfcb;
+  --color-2: #e4a9a8;
+  --color-3: #accfcb;
 }
 
 #title-word8 {
-  --color-1: #3D8DAE;
+  --color-1: #3d8dae;
   --color-2: #94582a;
-  --color-3: #E4A9A8;
+  --color-3: #e4a9a8;
 }
 
 /* Applying key framse */
 @keyframes color-animation {
   0% {
-    color: var(--color-1)
+    color: var(--color-1);
   }
 
   32% {
-    color: var(--color-1)
+    color: var(--color-1);
   }
 
   33% {
-    color: var(--color-2)
+    color: var(--color-2);
   }
 
   65% {
-    color: var(--color-2)
+    color: var(--color-2);
   }
 
   66% {
-    color: var(--color-3)
+    color: var(--color-3);
   }
 
   99% {
-    color: var(--color-3)
+    color: var(--color-3);
   }
 
   100% {
-    color: var(--color-1)
+    color: var(--color-1);
   }
 }
 
 /* Applying typing out animation on paragraph */
 .typed-out {
   overflow: hidden;
-  border-right: .15em solid black;
+  border-right: 0.15em solid black;
   white-space: nowrap;
-  animation:
-    typing 2s steps(40) forwards,
-    /* Typing animation */
-    blink .5s step-end infinite;
+  animation: typing 2s steps(40) forwards,
+    /* Typing animation */ blink 0.5s step-end infinite;
   /* Cursor blink */
 
   font-size: 1.6rem;
@@ -113,7 +111,6 @@ html {
 }
 
 @keyframes blink {
-
   0%,
   100% {
     border-color: transparent;
@@ -125,12 +122,12 @@ html {
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   overflow-x: hidden;
 }
 
 #title {
-  background-color: #CA965C;
+  background-color: #ca965c;
   color: #fff;
   min-height: 100vh;
   max-height: 50%;
@@ -141,15 +138,14 @@ body {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: bolder;
-
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   line-height: 1.5;
   font-weight: bold;
@@ -157,7 +153,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 800;
 }
 
@@ -181,7 +177,6 @@ p {
   height: auto;
 }
 
-
 .navbar {
   padding: 0 2rem 5rem 0rem;
   display: flex;
@@ -190,7 +185,7 @@ p {
 }
 
 .navbar-brand {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 3.5rem;
   font-weight: bold;
   font-size: 20px;
@@ -198,18 +193,15 @@ p {
 }
 
 .navbar-brand {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-
 }
 
 .navbar-toggler-icon {
   width: 3em;
   height: 3em;
 }
-
-
 
 .nav-item {
   padding: 0 25px;
@@ -225,11 +217,10 @@ p {
 }
 
 .nav-link {
-  transition: .3s ease;
+  transition: 0.3s ease;
   font-size: 1.5rem;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: lighter;
-
 }
 
 .nav-link:hover {
@@ -248,8 +239,6 @@ p {
   text-decoration: underline;
 }
 
-
-
 /*Buttons*/
 .download-button {
   margin: 5% 3% 5% 0;
@@ -257,7 +246,7 @@ p {
 
 #but,
 #but1 {
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 :is(#but, #but1):hover {
@@ -416,16 +405,11 @@ p {
   /* Adjust the horizontal position for "Next" */
 }
 
-
-
-
-
 #press {
   background-color: #fff;
   text-align: center;
   padding-bottom: 2%;
 }
-
 
 #press {
   background-color: #fff;
@@ -434,7 +418,6 @@ p {
 }
 
 .sponsor-card {
-
   position: relative;
   display: inline-block;
   margin: 20px;
@@ -443,7 +426,6 @@ p {
   /* Adjust the border-radius to round the corners slightly */
   overflow: hidden;
   /* Hide overflowing logos */
-
 }
 
 .sponsor-card:hover {
@@ -488,7 +470,6 @@ p {
   opacity: 1;
 }
 
-
 #pricing {
   padding: 100px;
 }
@@ -506,7 +487,7 @@ p {
   padding: 3% 2%;
 }
 
-@media (max-width:1028px) {
+@media (max-width: 1028px) {
   #title {
     text-align: center;
   }
@@ -522,47 +503,44 @@ p {
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .testimonial-image {
     width: 25rem;
     height: 15rem;
   }
-
 }
 
-@media (max-width:991.5px) {
+@media (max-width: 991.5px) {
   @keyframes typing {
     from {
-      width: 0
+      width: 0;
     }
 
     to {
-      width: 100%
+      width: 100%;
     }
   }
 }
 
-
-
 #cta {
-  background-color: #CA965C;
+  background-color: #ca965c;
   color: #fff;
   text-align: center;
   padding: 7% 15%;
 }
 
 .cta-heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   line-height: 1.5;
   font-weight: bold;
 }
 
-#footer{
+#footer {
   padding: 2rem 4rem;
 }
-#footer a{
-  color: #CA965C;
+#footer a {
+  color: #ca965c;
 }
 .social-media-icons {
   margin-top: 3rem;
@@ -570,12 +548,11 @@ p {
 .social-media-icons a:hover {
   color: #876445 !important;
 }
-.social-icon{
+.social-icon {
   margin: 20px 10px;
 }
 .copyright {
-  color: #CA965C;
-
+  color: #ca965c;
 }
 
 .card-image {
@@ -586,8 +563,6 @@ p {
 
 .payment {
   width: 50%;
-
-
 }
 
 .pay-text {
@@ -595,7 +570,6 @@ p {
 }
 
 .logo {
-
   border-radius: 100%;
   mix-blend-mode: multiply;
   width: 150px;
@@ -604,7 +578,6 @@ p {
 
 .content-section {
   margin: 1em;
-
 }
 
 .container {
@@ -648,7 +621,7 @@ p {
 
 .cart-item-title {
   color: #333;
-  margin-left: .5em;
+  margin-left: 0.5em;
   font-size: 1.2em;
 }
 
@@ -660,21 +633,21 @@ p {
 
 .btn-danger {
   color: white;
-  background-color: #EB5757;
+  background-color: #eb5757;
   border: none;
-  border-radius: .3em;
+  border-radius: 0.3em;
   font-weight: bold;
 }
 
 .btn-danger:hover {
-  background-color: #CC4C4C;
+  background-color: #cc4c4c;
 }
 
 .cart-quantity-input {
   height: 34px;
   width: 50px;
   border-radius: 5px;
-  border: 1px solid #56CCF2;
+  border: 1px solid #56ccf2;
   background-color: #eee;
   color: #333;
   padding: 0;
@@ -701,7 +674,6 @@ p {
   font-weight: bold;
   font-size: 1.5em;
   color: black;
-
 }
 
 .cart-total-price {
@@ -710,7 +682,6 @@ p {
   margin-right: 2rem;
   position: relative;
   top: -2rem;
-
 }
 
 .btn-purchase {
@@ -785,7 +756,7 @@ input {
 
 .screen {
   position: relative;
-  background: #CA965C;
+  background: #ca965c;
   border-radius: 15px;
 }
 
@@ -896,9 +867,8 @@ background: #343a40;
   margin-top: 40px;
 }
 
-.app-form-group.buttons {
+.app-form-group-buttons {
   margin-bottom: 0;
-  text-align: right;
 }
 
 .app-form-control {
@@ -923,20 +893,22 @@ background: #343a40;
 }
 
 .app-form-button {
-  background: none;
-  border: none;
-  color: #ffffff;
+  background: transparent;
+  border: 2px solid #666;
+  padding: auto;
+  border-radius: 8px;
+  color: #f8f2f2;
   font-size: 14px;
   cursor: pointer;
-  outline: none;
+  width: 100px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  position: relative;
 }
 
 .app-form-button:hover {
-
-  color: #eb5757;
-  transition-duration: 0.4s;
-  scale: 1.01;
-  color: #eb5757;
+  background-color: #f8f2f2;
+  color: #666;
+  transform: translateY(-5px);
 }
 
 .credits {
@@ -999,7 +971,6 @@ background: #343a40;
     padding: 0;
   }
 }
-
 
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
