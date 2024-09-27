@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.navbar-dark {
+  margin-top: 0.5rem; /** fixed login page navbar **/
+}
+
 .navbar::before {
   content: " ";
   position: absolute;
