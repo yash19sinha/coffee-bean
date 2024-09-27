@@ -92,10 +92,8 @@ html {
   overflow: hidden;
   border-right: 0.15em solid black;
   white-space: nowrap;
-  animation: typing 2s steps(40) forwards,
-    /* Typing animation */ blink 0.5s step-end infinite;
-  /* Cursor blink */
-
+  animation: typing 2s steps(40) forwards, /* Typing animation */
+  blink 0.5s step-end infinite; /* Cursor blink */
   font-size: 1.6rem;
   width: 0;
 }
@@ -106,7 +104,7 @@ html {
   }
 
   to {
-    width: 100%;
+    width: 77%; /** Adjusted blinker width **/
   }
 }
 
@@ -182,7 +180,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left:2rem
+  margin-left:2rem;
+  margin-top: -2.2rem; /** fixed navbar alignment **/
 }
 
 .navbar-brand {
@@ -207,7 +206,6 @@ p {
 .nav-item {
   padding: 0 2%;
   text-align: left;
-
   font-size: 20vw;
   font-weight: 800;
 }
@@ -222,12 +220,14 @@ p {
   font-size: 1.5rem;
   font-family: "Montserrat";
   font-weight: lighter;
+  text-decoration: none !important;
 }
 
 .nav-link:hover {
-  scale: 1.2;
+  scale: 1.05; /** fixed hover effect **/
   background-color: #7c4b21d1;
   border-radius: 10px;
+  text-decoration: none;
   color: white;
 }
 
@@ -255,10 +255,12 @@ p {
 }
 
 /*Title image*/
+
 .title-image {
   width: 90%;
   position: absolute;
   left: 20%;
+  margin-top: -5rem; /** Adjusted image position **/
 }
 
 /*Features*/
