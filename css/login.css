@@ -49,11 +49,8 @@ body {
 }
 
 .form-container {
-  max-width: 55vw;
-  /* Adjust the maximum width to your preference */
-  margin: 0 auto;
-  /* Center the container horizontally */
-  /* height: 45vh; */
+  max-width: 55vw; /* Adjust the maximum width to your preference */
+  margin: 0 auto; /* Center the container horizontally */
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
