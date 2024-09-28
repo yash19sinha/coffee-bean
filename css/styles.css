@@ -322,10 +322,11 @@ p {
 }
 
 .testimonial-image {
-  width: 70rem;
-  height: 33rem;
+  width: 80rem; /* Changed height */
+  height: 35rem; /* Changed width */
   align-items: center;
   margin: 20px;
+  border-radius: 10px; /* Added border radius to image */
 }
 
 /* Style for the carousel control buttons */
@@ -398,7 +399,8 @@ p {
 .sponsor-card {
   position: relative;
   display: inline-block;
-  margin: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   transition: transform 0.3s;
   border-radius: 20px; /* Adjust the border-radius to round the corners slightly */
   overflow: hidden; /* Hide overflowing logos */
@@ -409,8 +411,8 @@ p {
 }
 
 .circle {
-  width: 150px; /* Adjust the width and height to create a circle */
-  height: 150px; /* Adjust the width and height to create a circle */
+  width: 200px; /* Adjust the width and height to create a circle */
+  height: 200px; /* Adjust the width and height to create a circle */
   background-color: #876445; /* Background color for the circle */
   display: flex;
   justify-content: center;
@@ -418,8 +420,9 @@ p {
 }
 
 .press-logo {
-  width: 100px; /* Adjust the width of logos as needed */
-  height: 100px; /* Adjust the height of logos as needed */
+  width: 150px; /* Adjust the width of logos as needed */
+  height: 150px; /* Adjust the height of logos as needed */
+  border-radius: 10px; /* Added border radius for logo as well */
 }
 
 .overlay {
@@ -498,6 +501,7 @@ p {
   color: #fff;
   text-align: center;
   padding: 7% 15%;
+  margin-bottom: 50px; /* Added margin botton for alignment */
 }
 
 .cta-heading {
@@ -529,6 +533,10 @@ p {
 
 .copyright {
   color: #ca965c;
+}
+
+.shop-item-title {
+  text-align: center; /* Centered the name of menu items */
 }
 
 .card-image {
@@ -652,6 +660,10 @@ p {
   color: black;
 }
 
+.cart-total-main-price {
+  border-bottom: 1px solid black; /* Added border below total amount */
+}
+
 .cart-total-price {
   color: black;
   font-size: 1.5rem;
@@ -664,6 +676,11 @@ p {
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em;
+}
+
+.Payment-below {
+  width: 1140px; /* Adjusted width of hr */
+  margin: 0 auto;
 }
 
 /* Scroll To Top */
@@ -834,7 +851,7 @@ input {
 }
 
 .app-form-control::placeholder {
-  color: #666;
+  color: #ffffffb3; /* Changed color for better visibility */
 }
 
 .app-form-control:focus {
@@ -842,9 +859,11 @@ input {
 }
 
 .app-form-button {
+  margin-top: 10px; /* Added margin top */
+  margin-right: 10px;
   background: transparent;
   border: 2px solid #666;
-  padding: auto;
+  padding: 3px 6px; /* Added padding */
   border-radius: 8px;
   color: #f8f2f2;
   font-size: 14px;
