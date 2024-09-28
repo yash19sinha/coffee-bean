@@ -383,10 +383,11 @@
       </div>
 
       <section class="container content-section">
-  
-        <hr>
 
+        <hr>
         <h2 class="section-reader">CART</h2>
+        <hr> <!-- Added hr below cart -->
+
         <div class="cart-row">
           <span class="cart-item cart-header cart-column">ITEM</span>
           <span class="cart-price cart-header cart-column">PRICE</span>
@@ -441,19 +442,16 @@
     </div>
 
     <center>
-
       <button onclick="window.location.href='payment.html'" class="payment btn btn-dark btn-lg download-button"
         type="button">Payment</button>
-
     </center>
+    <hr class="Payment-below"> <!-- added hr below payment button -->
 
   </section>
 
   <section id="cta">
 
     <h3 class="cta-heading" id="cta-heading"></h3>
-
-    <br><br><br>
 
   </section>
 
@@ -469,7 +467,7 @@
           <img class="press-logo" src="img/press/starbucks.png" alt="Starbucks">
         </div>
         <div class="overlay">
-          <p>Sponsor: Starbucks</p>
+          <p>Sponsor: <br> Starbucks</p> <!-- Added br tag for better spacing -->
         </div>
       </div>
 
@@ -499,6 +497,8 @@
           <p>Sponsor: Illy</p>
         </div>
       </div>
+
+      <hr> <!-- Added hr for closing sponsor section -->
 
     </section>
 
