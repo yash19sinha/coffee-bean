@@ -174,3 +174,17 @@ body {
 .Done-button:hover {
   text-decoration: none;
 }
+
+.text-light:hover {
+  background: #7c4b21d1 !important; /* Added hover effect on button */
+}
+
+/** Added this to avoid text underline on beginning and added underline hover effect **/
+
+.link-page {
+  text-decoration: none !important;
+}
+
+.link-page:hover {
+  text-decoration: underline !important;
+}

@@ -323,10 +323,10 @@ p {
 
 .testimonial-image {
   width: 80rem; /* Changed height */
-  height: 35rem; /* Changed width */
+  height: 40rem; /* Changed width */
   align-items: center;
-  margin: 20px;
-  border-radius: 10px; /* Added border radius to image */
+  margin: 20px 20px 30px 20px;
+  border-radius: 20px; /* Added border radius to image */
 }
 
 /* Style for the carousel control buttons */
@@ -438,6 +438,10 @@ p {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.overlay p {
+  margin-top: 10px; /* Added margin for overlay text alignment */
 }
 
 .sponsor-card:hover .overlay {
