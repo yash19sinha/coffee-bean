@@ -1,145 +1,190 @@
-.container{
-    top: 23px;
+.container {
+  top: 23px;
 }
-.navbar{
-    padding: 0;
+
+.navbar {
+  padding: 0;
 }
-.navbar::before{
-    content: " ";
-    position: absolute;
-    background-color:#CA965C ;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+
+.navbar-dark {
+  margin-top: 0.5rem; /** fixed login page navbar **/
 }
- body{
-    background-color: #CA965C;
-    padding-bottom: 20px;
-} 
+
+.navbar::before {
+  content: " ";
+  position: absolute;
+  background-color: #CA965C;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+body {
+  background-color: #CA965C;
+  padding: 10px 0; /** Decreased padding from bottom and added same padding for top **/
+}
 
 #subHead1 {
-    color: black;
-    text-shadow: 2px 2px 4px #888585;
-    font-size: 30px;
-  }
-  .text-center {
-    color: #f7000c;
-    text-align: center!important;
-  }
-  #sign::before{
-    content: " ";
-    position: absolute;
-    /* background-image: linear-gradient(to right, #b40c57, #bf3370); */
-    left: 0px;
-    /* top: 0px; */
-    z-index: -1;
-    height: 100vh;
-    width: 100vw;
-  }
-  #sign{
-    height: 100vh;
-  }
-  .form-container {
-    max-width: 55vw; /* Adjust the maximum width to your preference */
-    margin: 0 auto; /* Center the container horizontally */
-    /* height: 45vh; */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f8f8f8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-    color: black;
-    
-    
-  }
+  color: black;
+  text-shadow: 2px 2px 4px #888585;
+  font-size: 30px;
+}
 
-  .form-container p{
-   text-align: center;
-    margin-top: 12px;
-  }
-  .form-container p a{
-    color: black;
-    text-decoration: underline;
-  }
-  
-  @media screen and (max-width: 1170px){
-    .form-container {
-        max-width: 75vw;
-    }
-  
-  }
-  @media screen and (max-width: 450px){
-    .navbar-brand img {
-        width: 14vw;
-        height: 14vw;
-       }
-       .navbar-brand{
-        font-size: 1.5rem;
-       }
-       
-  }
-  
-  @media screen and (max-width: 791px){
-    .form-container {
-        max-width: 90vw;
-    }
-    .form-group{
-        display: flex;
-        flex-direction: column;
-       }
-    #footer div{
-        /* margin-left: 8vw;
-        margin-right: 8vw; */
-       display: flex;
-       flex-direction: column;
-      }
-      .logo {
-        width: 16vw;
-        height: 16vw;
-       }
-  }
+.text-center {
+  color: #f7000c;
+  text-align: center !important;
+}
 
-  /* footer styling */
-  .logo {
-    border-radius: 100%;
-    mix-blend-mode: multiply;
-    width: 9vw;
-    height: 9vw;
-  }
-  #footer{
-    padding: 2rem 4rem;
-  }
-  #footer div{
-    /* margin-left: 8vw;
-    margin-right: 8vw; */
-    /* display: flex;
-    justify-content: space-between; */
-    max-width: 80vw; /* Adjust the maximum width to your preference */
-    margin: auto;
-  }
-  #footer a{
-    color: white;
-  }
-  .social-media-icons {
-    margin-top: 3rem;
-    display: flex;
-  }
-  .social-media-icons a:hover {
-    color: #876445 !important;
-  }
-  .social-icon{
-    margin: 20px 10px;
-  }
-  .copyright {
-    color: white;
-  }
-  .login-container {
-  max-width: 800px; /* Adjust the width as needed */
-  margin: 0 auto;
+#sign::before {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+}
+
+#sign {
+  height: 100vh;
+}
+
+.form-container {
+  max-width: 55vw; /* Adjust the maximum width to your preference */
+  margin: 0 auto; /* Center the container horizontally */
   padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  color: black;
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.form-container p a {
+  color: black;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1170px) {
+  .form-container {
+    max-width: 75vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar-brand img {
+    width: 14vw;
+    height: 14vw;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 791px) {
+  .form-container {
+    max-width: 90vw;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 16vw;
+    height: 16vw;
+  }
+}
+
+/* footer styling */
+
+.logo {
+  border-radius: 100%;
+  mix-blend-mode: multiply;
+  width: 9vw;
+  height: 9vw;
+}
+
+#footer {
+  padding: 2rem 4rem;
+}
+
+#footer div {
+  max-width: 80vw; /* Adjust the maximum width to your preference */
+  margin: auto;
+}
+
+#footer a {
+  color: white;
+}
+
+.social-media-icons {
+  margin-top: 3rem;
+  display: flex;
+}
+
+.social-media-icons a:hover {
+  color: #876445 !important;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+.copyright {
+  color: white;
+}
+
+.login-container {
+  max-width: 800px; /* Adjust the width as needed */
+  max-height: 600px; /** added height to aviod lot of empty space **/
+  margin: 0 auto;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
   color: white;
   background-color: white;
+}
+
+/** Added right margin to nav ul **/
+
+.navbar-nav {
+  margin-right: 100px;
+}
+
+/** Added this to avoid text underline on hover **/
+
+.Done-button {
+  text-decoration: none;
+}
+
+.Done-button:hover {
+  text-decoration: none;
+}
+
+.text-light:hover {
+  background: #7c4b21d1 !important; /* Added hover effect on button */
+}
+
+/** Added this to avoid text underline on beginning and added underline hover effect **/
+
+.link-page {
+  text-decoration: none !important;
+}
+
+.link-page:hover {
+  text-decoration: underline !important;
 }

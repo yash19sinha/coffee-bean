@@ -92,10 +92,8 @@ html {
   overflow: hidden;
   border-right: 0.15em solid black;
   white-space: nowrap;
-  animation: typing 2s steps(40) forwards,
-    /* Typing animation */ blink 0.5s step-end infinite;
-  /* Cursor blink */
-
+  animation: typing 2s steps(40) forwards, /* Typing animation */
+  blink 0.5s step-end infinite; /* Cursor blink */
   font-size: 1.6rem;
   width: 0;
 }
@@ -106,7 +104,7 @@ html {
   }
 
   to {
-    width: 100%;
+    width: 77%; /** Adjusted blinker width **/
   }
 }
 
@@ -182,7 +180,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left:2rem
+  margin-left:2rem;
+  margin-top: -2.2rem; /** fixed navbar alignment **/
 }
 
 .navbar-brand {
@@ -207,7 +206,6 @@ p {
 .nav-item {
   padding: 0 2%;
   text-align: left;
-
   font-size: 20vw;
   font-weight: 800;
 }
@@ -222,12 +220,14 @@ p {
   font-size: 1.5rem;
   font-family: "Montserrat";
   font-weight: lighter;
+  text-decoration: none !important;
 }
 
 .nav-link:hover {
-  scale: 1.2;
+  scale: 1.05; /** fixed hover effect **/
   background-color: #7c4b21d1;
   border-radius: 10px;
+  text-decoration: none;
   color: white;
 }
 
@@ -255,10 +255,12 @@ p {
 }
 
 /*Title image*/
+
 .title-image {
   width: 90%;
   position: absolute;
   left: 20%;
+  margin-top: -5rem; /** Adjusted image position **/
 }
 
 /*Features*/
@@ -272,8 +274,7 @@ p {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  height: 300px;
-  /* Set a fixed height for all feature cards */
+  height: 300px; /* Set a fixed height for all feature cards */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -283,10 +284,8 @@ p {
 }
 
 .feature-card:hover {
-  transform: scale(1.05);
-  /* Scale up the card on hover */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  /* Add a more pronounced shadow on hover */
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a more pronounced shadow on hover */
 }
 
 .icon:hover {
@@ -323,28 +322,22 @@ p {
 }
 
 .testimonial-image {
-  width: 70rem;
-  height: 33rem;
+  width: 80rem; /* Changed height */
+  height: 40rem; /* Changed width */
   align-items: center;
-  margin: 20px;
+  margin: 20px 20px 30px 20px;
+  border-radius: 20px; /* Added border radius to image */
 }
 
 /* Style for the carousel control buttons */
 .carousel-control-prev {
-  width: 50px;
-  /* Adjust the width as needed */
-  height: 50px;
-  /* Adjust the height as needed */
-  background-color: #ef8172;
-  /* Background color for the buttons */
-  border: none;
-  /* Remove borders */
-  border-radius: 50%;
-  /* Make them round */
-  opacity: 0.8;
-  /* Set initial opacity */
-  transition: background-color 0.3s, opacity 0.3s;
-  /* Add transitions for hover effect */
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #ef8172; /* Background color for the buttons */
+  border: none; /* Remove borders */
+  border-radius: 50%; /* Make them round */
+  opacity: 0.8; /* Set initial opacity */
+  transition: background-color 0.3s, opacity 0.3s; /* Add transitions for hover effect */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -353,20 +346,13 @@ p {
 }
 
 .carousel-control-next {
-  width: 50px;
-  /* Adjust the width as needed */
-  height: 50px;
-  /* Adjust the height as needed */
-  background-color: #ef8172;
-  /* Background color for the buttons */
-  border: none;
-  /* Remove borders */
-  border-radius: 50%;
-  /* Make them round */
-  opacity: 0.8;
-  /* Set initial opacity */
-  transition: background-color 0.3s, opacity 0.3s;
-  /* Add transitions for hover effect */
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #ef8172; /* Background color for the buttons */
+  border: none; /* Remove borders */
+  border-radius: 50%; /* Make them round */
+  opacity: 0.8; /* Set initial opacity */
+  transition: background-color 0.3s, opacity 0.3s; /* Add transitions for hover effect */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -376,34 +362,26 @@ p {
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-  background-color: #f03c57;
-  /* Change background color on hover */
-  opacity: 1;
-  /* Make them fully opaque on hover */
+  background-color: #f03c57; /* Change background color on hover */
+  opacity: 1; /* Make them fully opaque on hover */
 }
 
 /* Style for the icon inside the buttons */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: transparent;
-  /* Remove default icon background color */
-  color: #f03c57;
-  /* Icon color */
-  font-size: 24px;
-  /* Adjust the icon size */
-  line-height: 50px;
-  /* Vertically center the icon */
+  background-color: transparent; /* Remove default icon background color */
+  color: #f03c57; /* Icon color */
+  font-size: 24px; /* Adjust the icon size */
+  line-height: 50px; /* Vertically center the icon */
 }
 
 /* Adjust the position of the icons for "Next" and "Previous" */
 .carousel-control-prev-icon {
-  margin-left: -3px;
-  /* Adjust the horizontal position for "Previous" */
+  margin-left: -3px; /* Adjust the horizontal position for "Previous" */
 }
 
 .carousel-control-next-icon {
-  margin-right: -3px;
-  /* Adjust the horizontal position for "Next" */
+  margin-right: -3px; /* Adjust the horizontal position for "Next" */
 }
 
 #press {
@@ -421,12 +399,11 @@ p {
 .sponsor-card {
   position: relative;
   display: inline-block;
-  margin: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   transition: transform 0.3s;
-  border-radius: 20px;
-  /* Adjust the border-radius to round the corners slightly */
-  overflow: hidden;
-  /* Hide overflowing logos */
+  border-radius: 20px; /* Adjust the border-radius to round the corners slightly */
+  overflow: hidden; /* Hide overflowing logos */
 }
 
 .sponsor-card:hover {
@@ -434,22 +411,18 @@ p {
 }
 
 .circle {
-  width: 150px;
-  /* Adjust the width and height to create a circle */
-  height: 150px;
-  /* Adjust the width and height to create a circle */
-  background-color: #876445;
-  /* Background color for the circle */
+  width: 200px; /* Adjust the width and height to create a circle */
+  height: 200px; /* Adjust the width and height to create a circle */
+  background-color: #876445; /* Background color for the circle */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .press-logo {
-  width: 100px;
-  /* Adjust the width of logos as needed */
-  height: 100px;
-  /* Adjust the height of logos as needed */
+  width: 150px; /* Adjust the width of logos as needed */
+  height: 150px; /* Adjust the height of logos as needed */
+  border-radius: 10px; /* Added border radius for logo as well */
 }
 
 .overlay {
@@ -465,6 +438,10 @@ p {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.overlay p {
+  margin-top: 10px; /* Added margin for overlay text alignment */
 }
 
 .sponsor-card:hover .overlay {
@@ -528,6 +505,7 @@ p {
   color: #fff;
   text-align: center;
   padding: 7% 15%;
+  margin-bottom: 50px; /* Added margin botton for alignment */
 }
 
 .cta-heading {
@@ -540,20 +518,29 @@ p {
 #footer {
   padding: 2rem 4rem;
 }
+
 #footer a {
   color: #ca965c;
 }
+
 .social-media-icons {
   margin-top: 3rem;
 }
+
 .social-media-icons a:hover {
   color: #876445 !important;
 }
+
 .social-icon {
   margin: 20px 10px;
 }
+
 .copyright {
   color: #ca965c;
+}
+
+.shop-item-title {
+  text-align: center; /* Centered the name of menu items */
 }
 
 .card-image {
@@ -677,6 +664,10 @@ p {
   color: black;
 }
 
+.cart-total-main-price {
+  border-bottom: 1px solid black; /* Added border below total amount */
+}
+
 .cart-total-price {
   color: black;
   font-size: 1.5rem;
@@ -691,42 +682,33 @@ p {
   font-size: 1.75em;
 }
 
+.Payment-below {
+  width: 1140px; /* Adjusted width of hr */
+  margin: 0 auto;
+}
+
 /* Scroll To Top */
 #backToTop {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Fixed/sticky position */
-  bottom: 20px;
-  /* Place the button at the bottom of the page */
-  right: 30px;
-  /* Place the button 30px from the right */
-  z-index: 99;
-  /* Make sure it does not overlap */
-  border: none;
-  /* Remove borders */
-  outline: none;
-  /* Remove outline */
-  background-color: #c07534;
-  /* Set a background color */
-  color: white;
-  /* Text color */
-  cursor: pointer;
-  /* Add a mouse pointer on hover */
-  padding: 15px;
-  /* Some padding */
-  border-radius: 10px;
-  /* Rounded corners */
-  font-size: 18px;
-  /* Increase font size */
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #c07534; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
 
 #backToTop:hover {
-  background-color: #555;
-  /* Add a dark-grey background on hover */
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 
-/* #===========# contact #============# */
+/* contact */
 
 *,
 *:before,
@@ -745,7 +727,6 @@ input {
 }
 
 .background {
-  /* display: flex; */
   margin-top: 50px;
 }
 
@@ -843,17 +824,6 @@ input {
   font-size: 34px;
 }
 
-/* .app-title:after {
-content: "";
-display: block;
-position: absolute;
-left: 0;
-bottom: -10px;
-width: 25px;
-height: 4px;
-background: #343a40;
-} */
-
 .app-contact {
   margin-top: auto;
   font-size: 8px;
@@ -879,14 +849,13 @@ background: #343a40;
   border: none;
   border-bottom: 1px solid #666;
   color: #ddd;
-  font-size: 14px;
-  /* text-transform: uppercase; */
+  font-size: 14px; /* text-transform: uppercase; */
   outline: none;
   transition: border-color 0.2s;
 }
 
 .app-form-control::placeholder {
-  color: #666;
+  color: #ffffffb3; /* Changed color for better visibility */
 }
 
 .app-form-control:focus {
@@ -894,9 +863,11 @@ background: #343a40;
 }
 
 .app-form-button {
+  margin-top: 10px; /* Added margin top */
+  margin-right: 10px;
   background: transparent;
   border: 2px solid #666;
-  padding: auto;
+  padding: 3px 6px; /* Added padding */
   border-radius: 8px;
   color: #f8f2f2;
   font-size: 14px;
